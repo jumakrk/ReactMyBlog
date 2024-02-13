@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Web Development",
+      "author": "Samson",
+      "body" : "Contrary to popular belief, Lorem Ipsum is not simply",
+      "id": "6" 
+    },
+    {
+      "title": "JavaScript Frameworks",
+      "author": "John Doe",
+      "body": "There are many variations of passages of Lorem Ipsum available.",
+      "id": "7"
+    },
+    {
+      "title" : "Databases",
+      "author": "Jane Smith",
+      "body": "Sed ut perspiciatis unde omnis iste natus error",
+      "id": "8"
+    }
+  ]
+}

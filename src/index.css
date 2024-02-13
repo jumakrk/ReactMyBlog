@@ -32,8 +32,24 @@
   color: blueviolet;
 }
 
-.content{
+.content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: solid #f2f2f2;
+}
+
+.preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preview h3 {
+  font-size: 15px;
+  color: blueviolet;
+  margin-bottom: 6px;
 }
