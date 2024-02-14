@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const UserInput  = () => {
+const Content  = () => {
   const [Title, setTitle] = useState("");
   const [Author, setAuthor] = useState("");
   const [Body, setBody] = useState("");
@@ -22,4 +22,4 @@ const UserInput  = () => {
       </div>
     )
 };
-export default UserInput;
+export default Content;
