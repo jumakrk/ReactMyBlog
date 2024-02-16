@@ -1,20 +1,27 @@
 import './App.css';
-// import Content from './components/Content';
 import Navbar from  "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
-// import BlogList from './components/Bloglist';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './components/Content';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <div className="content">
-
-      </div>
       <Navbar/>
-      {/* <Content/> */}
-      <Home/>
+      <div className="content">
+        <Switch>
+          <Route exact path='/'>
+            <Home/>
+          </Route>
+          <Route path="/Content">
+            <Create/>
+          </Route>
+        </Switch>
+      </div>
     </div>
+    </Router>
   );
 }
 

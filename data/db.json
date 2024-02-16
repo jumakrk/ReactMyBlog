@@ -3,8 +3,8 @@
     {
       "title": "Web Development",
       "author": "Samson",
-      "body" : "Contrary to popular belief, Lorem Ipsum is not simply",
-      "id": "6" 
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply",
+      "id": "6"
     },
     {
       "title": "JavaScript Frameworks",
@@ -13,7 +13,7 @@
       "id": "7"
     },
     {
-      "title" : "Databases",
+      "title": "Databases",
       "author": "Jane Smith",
       "body": "Sed ut perspiciatis unde omnis iste natus error",
       "id": "8"
