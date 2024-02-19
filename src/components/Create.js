@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
 
-const Content  = () => {
+const Create  = () => {
   const [data, setData] = useState({
     Title: "", 
     Author: "", 
@@ -13,7 +13,7 @@ const Content  = () => {
     const {name, value} = e.target;
     e.preventDefault()
     setData((prev)=>{
-      return {...prev, [name] : [value]}
+      return {...prev, [name] : value};
     })
   }
 
@@ -25,6 +25,7 @@ const Content  = () => {
      autoClose: 3000})
     })
     .catch(err=>{
+      console.error(err);
      toast.error("Error setting new blog",
      {position: toast.POSITION.TOP_RIGHT,
       autoClose: 3000})
@@ -49,4 +50,4 @@ const Content  = () => {
     </div>
   )
 };
-export default Content;
+export default Create;

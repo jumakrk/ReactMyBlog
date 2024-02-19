@@ -3,7 +3,7 @@ import Navbar from  "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Create from './components/Content';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route exact path='/'>
             <Home/>
           </Route>
-          <Route path="/Content">
+          <Route path="/Create">
             <Create/>
           </Route>
         </Switch>

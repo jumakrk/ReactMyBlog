@@ -1,23 +1,12 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
 import BlogList from "./Bloglist";
+import useFetch from "./useFetch";
 
  const Home = ()=>{
-  const [blogs, setBlogs] = useState (null)
-
-  useEffect (()=>{
-    axios.get ('http://localhost:4000/blogs') //set API
-    .then(res => {setBlogs (res.data)})
-    .catch (err=>{
-      console.log(err.message);
-    })
-  })
-  
-  
+  const {data} = useFetch ('https://localhost:4000/blogs')
 
 return(
   <div>
-    {blogs && <BlogList blogs = {blogs}/>}
+    {data && <BlogList blogs = {data} title="All Blogs"/>}
   </div>
 )
 }
